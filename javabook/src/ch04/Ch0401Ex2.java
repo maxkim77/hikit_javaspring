@@ -6,21 +6,33 @@ class Point03{
 	
 	private int x;
 	private int y;
-	
-	//맴버변수 이름과 파라미터 변수 이름이 같을 경우 this를 붙인다.
-	
 	public int getX() {
 		return x;
 	}
 	public void setX(int x) {
-		this.x=x;
+		this.x = x;
 	}
 	public int getY() {
 		return y;
 	}
 	public void setY(int y) {
-		this.y=y;
-	}	
+		this.y = y;
+	}
+	
+	//맴버변수 이름과 파라미터 변수 이름이 같을 경우 this를 붙인다.
+	
+//	public int getX() {
+//		return x;
+//	}
+//	public void setX(int x) {
+//		this.x=x;
+//	}
+//	public int getY() {
+//		return y;
+//	}
+//	public void setY(int y) {
+//		this.y=y;
+//	}	
 }
 
 
