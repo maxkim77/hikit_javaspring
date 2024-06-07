@@ -14,8 +14,7 @@ class Point3D07 extends Point2D07 {
 	public void showPoint() {
 		super.showPoint();
 		System.out.println(" z 좌표: " + z);
-	}
-	
+	}	
 }
 
 public class Ch0410Ex7rid {

@@ -1,29 +1,25 @@
 package ch04;
 
-class Shape {
-	public double res = 0;
+class Shape{
+	protected double res;
 	public double area() {
-		System.out.println("상위 클래스입니다.");
 		return res;
 	}
-	// area 가 없으면 오버라이딩이 안됨.
-	
 }
-
 
 class Circle extends Shape {
 	public int r = 5;
 	public double area() {
-		res = r * r * Math.PI;
+		res = r*r*Math.PI;
 		return res;
 	}
 }
 
 class Rectangle extends Shape{
 	public int w = 10;
-	public int h = 10;
+	public int h  = 10;
 	public double area() {
-		res = w*h;
+		res  = w * h;
 		return res;
 	}
 }
@@ -32,10 +28,11 @@ class Triangle extends Shape {
 	public int w = 10;
 	public int h = 10;
 	public double area() {
-		res=w*h*0.5;
+		res = w * h*0.5;
 		return res;
-	};
+	}
 }
+
 
 
 public class Ch0415Ex11 {
