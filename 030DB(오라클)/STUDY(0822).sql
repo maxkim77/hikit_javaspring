@@ -407,14 +407,13 @@ SELECT FIRST_NAME
 SELECT FIRST_NAME
      , DEPARTMENT_ID
      , CASE DEPARTMENT_ID
-    WHEN 10  THEN
-        'TEAM-1'
-    WHEN 20  THEN
-        'TEAM-2'
-    WHEN 30  THEN
-        'TEAM-3'
-    ELSE
-        'N/A'
+    WHEN 10
+    THEN 'TEAM-1'
+    WHEN 20
+    THEN 'TEAM-2'
+    WHEN 30
+    THEN 'TEAM-3'
+    ELSE 'N/A'
 END "TEAM"
   FROM EMPLOYEES
  WHERE DEPARTMENT_ID < 50;
@@ -422,14 +421,13 @@ END "TEAM"
 SELECT FIRST_NAME
      , DEPARTMENT_ID
      , CASE
-    WHEN DEPARTMENT_ID BETWEEN 10 AND 50    THEN
-        'TEAM-1'
-    WHEN DEPARTMENT_ID BETWEEN 60 AND 100   THEN
-        'TEAM-2'
-    WHEN DEPARTMENT_ID BETWEEN 110 AND 150  THEN
-        'TEAM-3'
-    ELSE
-        'N/A'
+    WHEN DEPARTMENT_ID BETWEEN 10 AND 50
+    THEN 'TEAM-1'
+    WHEN DEPARTMENT_ID BETWEEN 60 AND 100
+    THEN 'TEAM-2'
+    WHEN DEPARTMENT_ID BETWEEN 110 AND 150
+    THEN 'TEAM-3'
+    ELSE 'N/A'
 END "TEAM"
   FROM EMPLOYEES;
 
@@ -474,8 +472,8 @@ SELECT MAX(SALARY)
 
 SELECT MAX(SALARY)
      , MIN(SALARY)
-     , TO_CHAR(MAX(HIRE_DATE), 'YYYY-MM-DD')          "MAX_DATE"
-     , TO_CHAR(MIN(HIRE_DATE), 'YYYY-MM-DD')          AS "MIN_DATE"
+     , TO_CHAR(MAX(HIRE_DATE), 'YYYY-MM-DD')         "MAX_DATE"
+     , TO_CHAR(MIN(HIRE_DATE), 'YYYY-MM-DD')         AS "MIN_DATE"
   FROM EMPLOYEES;
 
 -- GROUP BY
@@ -550,15 +548,14 @@ SELECT DEPARTMENT_ID || '번 집계'   AS DEPARTMENT_ID
  GROUP BY DEPARTMENT_ID
  ORDER BY DEPARTMENT_ID
         , CASE
-              WHEN JOB_ID = '' THEN
-                  1
-              ELSE
-                  0
+              WHEN JOB_ID = ''
+              THEN 1
+              ELSE 0
           END
         , -- JOB_ID가 빈 문자열인 행을 정렬에서 뒤로 이동
          JOB_ID;
 
-SELECT NVL(DEPARTMENT_ID, 999)       AS "부서ID"
+SELECT NVL(DEPARTMENT_ID, 999)      AS "부서ID"
      , JOB_ID                       AS "직무ID"
      , COUNT(*)                     AS "직원수"
      , SUM(SALARY)                  AS "총급여"
@@ -566,7 +563,7 @@ SELECT NVL(DEPARTMENT_ID, 999)       AS "부서ID"
  GROUP BY NVL(DEPARTMENT_ID, 999)
         , JOB_ID
 UNION ALL
-SELECT NVL(DEPARTMENT_ID, 999)       AS "부서ID"
+SELECT NVL(DEPARTMENT_ID, 999)      AS "부서ID"
      , '부서합계'                       AS "직무ID"
      , COUNT(*)                     AS "직원수"
      , SUM(SALARY)                  AS "총급여"
@@ -578,7 +575,7 @@ SELECT NVL(DEPARTMENT_ID, 999)       AS "부서ID"
 
 -- 1000 전체합계 추가
 
-SELECT NVL(DEPARTMENT_ID, 999)       AS "부서ID"
+SELECT NVL(DEPARTMENT_ID, 999)      AS "부서ID"
      , JOB_ID                       AS "직무ID"
      , COUNT(*)                     AS "직원수"
      , SUM(SALARY)                  AS "총급여"
@@ -586,7 +583,7 @@ SELECT NVL(DEPARTMENT_ID, 999)       AS "부서ID"
  GROUP BY NVL(DEPARTMENT_ID, 999)
         , JOB_ID
 UNION ALL
-SELECT NVL(DEPARTMENT_ID, 999)       AS "부서ID"
+SELECT NVL(DEPARTMENT_ID, 999)      AS "부서ID"
      , '부서합계'                       AS "직무ID"
      , COUNT(*)                     AS "직원수"
      , SUM(SALARY)                  AS "총급여"
@@ -607,7 +604,7 @@ SELECT 1000            AS "부서ID"
 
 -- ROLLUP
 
-SELECT NVL(DEPARTMENT_ID, 999)       AS "부서ID"
+SELECT NVL(DEPARTMENT_ID, 999)      AS "부서ID"
      , JOB_ID                       AS "직무ID"
      , COUNT(*)                     AS "직원수"
      , SUM(SALARY)                  AS "총급여"
@@ -688,7 +685,7 @@ SET HIRE_DATE = TO_DATE(000000,'HH24MISS')
 WHERE DEPARTMENT_ID=110;
 
 UPDATE EMPLOYEES7
-SET HIRE_DATE = TO_DATE(TO_CHAR(HIRE_DATE, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+SET HIRE_DATE = TO_DATE(TO_CHAR(HIRE_DATE, 'YYYYMMDD'), 'YYYYMMDD')
 WHERE DEPARTMENT_ID = 110;
 
 SELECT * FROM EMPLOYEES7;
@@ -772,3 +769,246 @@ INSERT INTO EMPLOYEES10 VALUES (
   , 3
   , 999
 );
+ 
+ /* subquery
+ nested query
+  상수가 아닌 값들을 조건을 걸때
+  예로들어서 칼럼안에 상수가 아닌 값으로 조건을 걸때
+  해당 값이 계속 변할 수 있기때문에
+ */
+
+SELECT EMPLOYEE_ID
+     , FIRST_NAME
+     , SALARY
+  FROM EMPLOYEES
+ WHERE SALARY = (
+    SELECT SALARY
+      FROM EMPLOYEES
+     WHERE FIRST_NAME = 'Donald'
+);
+
+SELECT *
+  FROM EMPLOYEES
+ WHERE FIRST_NAME = 'Donald';
+-- pk로 조건을 잡지않아서, 데이터가 중복 된게 나올 수 있기때문
+
+SELECT EMPLOYEE_ID
+     , FIRST_NAME
+     , SALARY
+  FROM EMPLOYEES
+ WHERE SALARY < (
+    SELECT MIN(SALARY)
+      FROM EMPLOYEES
+     WHERE FIRST_NAME = 'Alexander'
+);
+         
+         
+-- 단건조회서브쿼리 : 조회의 결과가 한건 다중조회
+-- ex) pk로 걸었을때
+-- 데이터가 없거나 잇거나 한건
+-- 다건조회서브쿼리 : 여러건 조회
+
+
+SELECT EMPLOYEE_ID
+     , FIRST_NAME
+     , SALARY
+  FROM EMPLOYEES
+ WHERE SALARY = (
+    SELECT SALARY
+      FROM EMPLOYEES
+     WHERE FIRST_NAME = 'Donald'
+) AND FIRST_NAME != 'Donald';
+
+/* SubQuery 
+employees 테이블에서 donald 사원과 입사일이 동일하거나 늦게 입사한 사원들의
+값을 출력하기
+*/   
+SELECT EMPLOYEE_ID
+     , FIRST_NAME
+     , SALARY
+     , HIRE_DATE
+FROM   EMPLOYEES
+WHERE  HIRE_DATE >= 
+     (SELECT HIRE_DATE
+      FROM   EMPLOYEES
+      WHERE  FIRST_NAME = 'Donald'
+);
+DESC EMPLOYEES;
+SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE '%Alexander';
+
+/* 서브 쿼리 리모델링
+ hiredate 리모델링*/
+SELECT EMPLOYEE_ID
+     , FIRST_NAME
+     , SALARY
+     , HIRE_DATE
+FROM   EMPLOYEES
+WHERE  HIRE_DATE >= 
+     (SELECT TO_DATE(TO_CHAR(MIN(HIRE_DATE), 'YYYYMMDD'), 'YYYYMMDD')
+      FROM   EMPLOYEES
+      WHERE  FIRST_NAME = 'Donald')
+;
+
+SELECT EMPLOYEE_ID
+     , FIRST_NAME
+     , SALARY
+     , HIRE_DATE
+FROM   EMPLOYEES
+WHERE  HIRE_DATE >= 
+     (SELECT TO_DATE(TO_CHAR(MIN(HIRE_DATE), 'YYYYMMDD'), 'YYYYMMDD')
+      FROM   EMPLOYEES
+      WHERE  FIRST_NAME = 'Donald')
+;
+-- 이 회사가 1990 1월 1일 문을 염
+-- 전산시스템 2000년도에 구축
+-- 직원이 그전에 이미 있는 사람
+-- 직원 테이블 이 있는데 입사일자가 없다.
+-- hire_date null일 수 잇다.
+-- donald가 널일 수 잇다.
+-- 1990년 1월 1일로, 널이면
+-- 여기 쿼리 기반으로
+
+SELECT EMPLOYEE_ID
+     , FIRST_NAME
+     , SALARY
+     , NVL(HIRE_DATE,TO_DATE(19900101,'YYYYMMDD'))
+FROM   EMPLOYEES
+WHERE  HIRE_DATE >= 
+     (SELECT TO_DATE(TO_CHAR(MIN(HIRE_DATE), 'YYYYMMDD'), 'YYYYMMDD')
+      FROM   EMPLOYEES
+      WHERE  FIRST_NAME = 'Donald')
+;
+
+SELECT EMPLOYEE_ID
+     , FIRST_NAME
+     , SALARY
+     , NVL(HIRE_DATE, TO_DATE(19900101, 'YYYYMMDD'))
+  FROM EMPLOYEES
+ WHERE HIRE_DATE >= (
+    SELECT TO_DATE(TO_CHAR(MIN(NVL(HIRE_DATE, TO_DATE('19900101', 'YYYYMMDD'))), 'YYYYMMDD'), 'YYYYMMDD')
+      FROM EMPLOYEES
+     WHERE FIRST_NAME = 'Donald'
+);
+SELECT EMPLOYEE_ID,
+       FIRST_NAME,
+       SALARY,
+       HIRE_DATE
+  FROM EMPLOYEES
+ WHERE NVL(HIRE_DATE, TO_DATE('19900101', 'YYYYMMDD')) >= (
+    SELECT TO_DATE(
+               TO_CHAR(
+                   MIN(
+                       NVL(HIRE_DATE, TO_DATE('19900101', 'YYYYMMDD'))
+                   ), 
+                   'YYYYMMDD'
+               ), 
+               'YYYYMMDD'
+           )
+      FROM EMPLOYEES
+     WHERE FIRST_NAME = 'Donald'
+);
+
+-- 평균구할때 NVL 0써서 처리하기
+
+SELECT FIRST_NAME, SALARY
+FROM   EMPLOYEES
+WHERE  SALARY > (SELECT AVG(NVL(SALARY,0))
+                FROM EMPLOYEES
+                WHERE DEPARTMENT_ID = 100);
+                
+                SELECT FIRST_NAME, SALARY
+FROM EMPLOYEES
+WHERE SALARY> ALL (SELECT SALARY
+                  FROM EMPLOYEES
+                  WHERE DEPARTMENT_ID = 110);
+
+SELECT FIRST_NAME, SALARY
+FROM EMPLOYEES
+WHERE SALARY> ALL (SELECT SALARY
+                   FROM EMPLOYEES
+                   WHERE DEPARTMENT_ID = 110);
+                   
+SELECT FIRST_NAME, SALARY
+FROM EMPLOYEES
+WHERE SALARY < ANY (SELECT SALARY
+                   FROM EMPLOYEES
+                   WHERE DEPARTMENT_ID = 110);               
+
+SELECT FIRST_NAME, SALARY
+FROM EMPLOYEES
+WHERE SALARY   >   (SELECT MAX(SALARY)
+                   FROM EMPLOYEES
+                   WHERE DEPARTMENT_ID = 110)
+                   ;
+                   
+                   
+SELECT * FROM DEPT
+WHERE EXISTS (SELECT *
+              FROM EMP
+            WHERE DEPTNO=10);
+            
+            
+SELECT DEPARTMENT_ID, FIRST_NAME, SALARY
+FROM   EMPLOYEES
+WHERE  (DEPARTMENT_ID,SALARY) IN (SELECT DEPARTMENT_ID,
+                                  MAX(SALARY)
+                                  FROM EMPLOYEES
+                                  GROUP BY DEPARTMENT_ID)
+ORDER BY 1;
+
+SELECT * FROM DEPARTMENTS;
+
+SELECT FIRST_NAME "사원이름", (SELECT DEPARTMENT_NAME
+                              FROM  DEPARTMENTS D
+                              WHERE E.DEPARTMENT_ID=D.DEPARTMENT_ID) "부서이름"
+FROM EMPLOYEES E;
+
+-- DEPARTMENTS 조회
+-- 1800번 지역ID의  
+-- 근무하는 직원명단 FIRST NAME LASTNAME
+
+SELECT FIRST_NAME
+     , LAST_NAME
+FROM   EMPLOYEES
+WHERE DEPARTMENT_ID
+IN
+
+( SELECT DEPARTMENT_ID
+  FROM DEPARTMENTS
+ WHERE LOCATION_ID = 1800
+);
+
+
+-- 이메일아이디 인덱스로 uniuqe로 줄수잇다.
+
+-- desc를 걸어서 인덱싱하면 더 빠른 경우가 잇다.
+
+-- 인덱스하면서 값이 바뀌면 오히려 시간이 더 걸릴수잇다.
+
+SELECT TABLE_NAME
+     , INDEX_NAME
+  FROM USER_INDEXES
+ WHERE TABLE_NAME = 'DEPARTMENTS';
+
+--  PK는 저절로 인덱스가 만들어짐
+-- LOCATION IX가 인덱스
+
+CREATE INDEX IDX_DEPARTMENTS_DNAME 
+ON    DEPARTMENTS (
+        DEPARTMENT_NAME
+    );
+    
+DROP INDEX IDX_DEPARTMENTS_DNAME;
+
+
+
+
+
+
+
+
+
+
+
+
+
