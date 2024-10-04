@@ -10,7 +10,7 @@ public class test10 {
 		
 		a = sc.nextInt();
 		b = sc.nextInt();
-		
+		sc.close();
 		if(a<b) {
 			min = a;
 			max = b;
