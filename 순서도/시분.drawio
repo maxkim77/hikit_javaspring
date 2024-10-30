@@ -1,0 +1,43 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="페이지-1" id="dlfJ4tfzCgOAJnieqMPK">
+    <mxGraphModel dx="930" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kNPmsc3ppIqtJah-IkdS-1" target="kNPmsc3ppIqtJah-IkdS-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-1" value="START" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="170" y="30" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kNPmsc3ppIqtJah-IkdS-2" target="kNPmsc3ppIqtJah-IkdS-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-2" value="int m&lt;div&gt;int hh&lt;/div&gt;&lt;div&gt;int mm&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="160" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kNPmsc3ppIqtJah-IkdS-4" target="kNPmsc3ppIqtJah-IkdS-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-4" value="m" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="160" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kNPmsc3ppIqtJah-IkdS-6" target="kNPmsc3ppIqtJah-IkdS-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-6" value="hh = m/60;&lt;div&gt;mm= m%60;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="160" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kNPmsc3ppIqtJah-IkdS-8" target="kNPmsc3ppIqtJah-IkdS-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-8" value="hh, mm" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="170" y="600" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kNPmsc3ppIqtJah-IkdS-10" value="END" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="170" y="720" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

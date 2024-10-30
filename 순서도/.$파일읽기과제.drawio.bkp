@@ -1,0 +1,71 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="페이지-1" id="FhggoKb8iGWl9-fDYu0h">
+    <mxGraphModel dx="815" dy="1044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="45gfRjh9HsWmHlMW1jci-1" value="파일 읽기" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="110" y="150" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-2" value="파일에 쓰기" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="130" y="390" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-3" value="종이출력" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="280" y="260" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-4" value="class, seq, score" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="120" y="250" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-5" value="&quot;전체 총점&quot; , total" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="280" y="150" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-64" target="45gfRjh9HsWmHlMW1jci-66">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-64" value="파일 읽기" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="345" y="390" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-66" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=default;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;verticalAlign=top;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="540" y="500" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-68" value="END" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-70" target="45gfRjh9HsWmHlMW1jci-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-70" value="파일 읽기" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-76" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="630" y="350" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-73" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-76">
+          <mxGeometry width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="45gfRjh9HsWmHlMW1jci-76" source="45gfRjh9HsWmHlMW1jci-72" target="45gfRjh9HsWmHlMW1jci-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-72" value="END" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-76">
+          <mxGeometry x="10" y="25" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.883;entryY=-0.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="45gfRjh9HsWmHlMW1jci-76" source="45gfRjh9HsWmHlMW1jci-72" target="45gfRjh9HsWmHlMW1jci-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-79" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
+          <mxGeometry x="773" y="450" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-72" target="45gfRjh9HsWmHlMW1jci-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-82" value="START" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="160" y="590" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

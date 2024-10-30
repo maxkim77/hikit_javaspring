@@ -1,0 +1,177 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="페이지-1" id="FhggoKb8iGWl9-fDYu0h">
+    <mxGraphModel dx="969" dy="1044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="45gfRjh9HsWmHlMW1jci-1" value="파일 읽기" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="110" y="150" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-2" value="파일에 쓰기" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="130" y="390" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-3" value="종이출력" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="280" y="260" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-4" value="class, seq, score" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="120" y="250" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-5" value="&quot;전체 총점&quot; , total" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="280" y="150" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-36" target="45gfRjh9HsWmHlMW1jci-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-36" value="START" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="206" y="610" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-37" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="101" y="718" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-38" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.27;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-37">
+          <mxGeometry x="10" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-39" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int[][] score = {{1,1,290},{1,7,280},{9,7,270},{9,9,260}};&lt;/div&gt;&lt;div&gt;int sum=0;&lt;/div&gt;&lt;div&gt;int total =0;&lt;/div&gt;&lt;div&gt;int i;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-37">
+          <mxGeometry x="2" y="31" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.335;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-41" target="45gfRjh9HsWmHlMW1jci-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-41" value="sum = score[0][2];" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="211" y="868" width="141" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-43" target="45gfRjh9HsWmHlMW1jci-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-43" value="i=0;i&amp;lt;3;i++" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="50" y="959" width="690" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-44" value="" style="group" vertex="1" connectable="0" parent="45gfRjh9HsWmHlMW1jci-43">
+          <mxGeometry x="45" y="50" width="640" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="45gfRjh9HsWmHlMW1jci-44" source="45gfRjh9HsWmHlMW1jci-47" target="45gfRjh9HsWmHlMW1jci-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="45gfRjh9HsWmHlMW1jci-44" source="45gfRjh9HsWmHlMW1jci-47" target="45gfRjh9HsWmHlMW1jci-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-47" value="score[i][0]==score[i+1][0]" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-44">
+          <mxGeometry x="28" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-48" value="sum += score[i+1][2];&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-44">
+          <mxGeometry y="180" width="196" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-49" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;total+=sum;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sum = score[i+1][2];&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-44">
+          <mxGeometry x="304" y="200" width="159" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-50" value="Y" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-44">
+          <mxGeometry x="44" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-51" value="N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-44">
+          <mxGeometry x="149.5" y="46" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="45gfRjh9HsWmHlMW1jci-44" source="45gfRjh9HsWmHlMW1jci-53" target="45gfRjh9HsWmHlMW1jci-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-53" value="score[i][0] + &quot;반 총점: &quot; + sum + &quot;\n&quot;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-44">
+          <mxGeometry x="260.5" y="95" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="45gfRjh9HsWmHlMW1jci-43" source="45gfRjh9HsWmHlMW1jci-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="261" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="143" y="340" />
+              <mxPoint x="262" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="45gfRjh9HsWmHlMW1jci-43" source="45gfRjh9HsWmHlMW1jci-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="261" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="419" y="340" />
+              <mxPoint x="262" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-57" target="45gfRjh9HsWmHlMW1jci-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-57" value="&lt;div&gt;score[i][0] + &quot;반 총점: &quot; + sum + &quot;\n&quot;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="233" y="1469" width="324" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-38" target="45gfRjh9HsWmHlMW1jci-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="1642" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-60" value="&lt;div&gt;&lt;div&gt;&quot;전체 총점: &quot; + total&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="283" y="1554" width="224" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-61" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="45gfRjh9HsWmHlMW1jci-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="389" y="979" as="sourcePoint" />
+            <mxPoint x="649" y="1229" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="389" y="1009" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="1469" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-63" value="&lt;div&gt;&lt;b&gt;total += sum;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="311" y="1379" width="168" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-64" target="45gfRjh9HsWmHlMW1jci-66">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-64" value="파일 읽기" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="345" y="390" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-66" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=default;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;verticalAlign=top;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="540" y="500" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-68" value="END" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-70" target="45gfRjh9HsWmHlMW1jci-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-70" value="파일 읽기" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-76" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="630" y="350" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-73" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-76">
+          <mxGeometry width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="45gfRjh9HsWmHlMW1jci-76" source="45gfRjh9HsWmHlMW1jci-72" target="45gfRjh9HsWmHlMW1jci-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-72" value="END" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="45gfRjh9HsWmHlMW1jci-76">
+          <mxGeometry x="10" y="25" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.883;entryY=-0.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="45gfRjh9HsWmHlMW1jci-76" source="45gfRjh9HsWmHlMW1jci-72" target="45gfRjh9HsWmHlMW1jci-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-79" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
+          <mxGeometry x="773" y="450" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="45gfRjh9HsWmHlMW1jci-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="45gfRjh9HsWmHlMW1jci-72" target="45gfRjh9HsWmHlMW1jci-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
